@@ -27,14 +27,13 @@
 }
 
 .textoIndex {
-    background-color: #5541e9;
-    color: rgb(48, 181, 190);
+    background-color: #7c6bf8;
+    color: rgb(0, 0, 0);
     width: 60%;
     height: 20%;
     border-radius: 30px;
     margin-top: 5%;
     text-align: center;
-    text-shadow: 1px 1px 0 #14414d, -0.5px -0.5px 0 #000;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -42,6 +41,10 @@
     justify-content: center;
     font-size: 130%;
     padding: 2%;
+    box-shadow: 0 6px 12px rgb(39, 2, 73);
+}
+.textoIndex p{
+  font-size: large;
 }
 
 .Navegador img {
@@ -77,19 +80,29 @@ section {
     justify-content: space-around;
 }
 
-.curiosity-carousel {
+.ContenedorExhibicion {
     flex-direction: row;
-    overflow-x: scroll;
     padding: 20px;
     margin: 0 auto;
-    width: 85%;
+    width: 40%;
+  }
+  .ContenedorExhibicion h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #2d2186;
+  }
+  .ContenedorExhibicion h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    color: #222229;
   }
   
-  .curiosity-carousel div {
+  .ContenedorExhibicion div {
     flex: 0 0 40%;
-    margin-right: 20px;
-    scroll-snap-align: start;
-    background-color: #f9f9f9;
+    margin: 2%;
+    background-color: #8261dd;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -98,27 +111,30 @@ section {
     text-align: center;
     justify-content: center;
   }
-  .curiosity-carousel div img{
+  .ContenedorExhibicion div img{
     width: 50%;
     height: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 1%;
   }
   
-  .curiosity-carousel div:hover {
+  .ContenedorExhibicion div:hover {
     transform: scale(1.05);
   }
   
-  .curiosity-carousel div::before,
-  .curiosity-carousel div::after {
+  .ContenedorExhibicion div::before,
+  .ContenedorExhibicion div::after {
     content: "";
     display: block;
     flex: 0 0 20%;
   }
   
-  .curiosity-carousel div::before {
+  .ContenedorExhibicion div::before {
     background: linear-gradient(to right, transparent, #f9f9f9);
   }
   
-  .curiosity-carousel div::after {
+  .ContenedorExhibicion div::after {
     background: linear-gradient(to left, transparent, #f9f9f9);
   }
 
@@ -207,13 +223,6 @@ footer div a {
   }
   .contact-info p{
     font-size: 110%;
-  }
-  .contact-info p a:hover {
-    color: #666;
-  }
-
-  .contact-info p:hover {
-    background-color: #eef0f1;
   }
   .galeria{
     clear: both;
