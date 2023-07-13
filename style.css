@@ -78,10 +78,8 @@ section {
 }
 
 .curiosity-carousel {
-    display: flex;
+    flex-direction: row;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     padding: 20px;
     margin: 0 auto;
     width: 85%;
@@ -234,7 +232,7 @@ footer div a {
     height: auto;
   }
   .contact-info {
-    width: 300px;
+    width: 35%;
     background-color: #4c57bd;
     padding: 20px;
     border: 2px solid #000000;
