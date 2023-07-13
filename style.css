@@ -167,6 +167,7 @@ footer {
     width: 97.85%;
     align-items: center;
     justify-content: center;
+    clear: both;
 }
 
 footer div {
@@ -178,7 +179,9 @@ footer div img {
     height: 10%;
     width: 10%;
 }
-
+header{
+  clear: both;
+}
 footer div a {
     color: #fff;
     text-decoration: none;
