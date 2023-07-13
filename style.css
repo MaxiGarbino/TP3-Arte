@@ -27,14 +27,13 @@
 }
 
 .textoIndex {
-    background-color: #5541e9;
-    color: rgb(48, 181, 190);
+    background-color: rgb(231, 231, 231);
+    color: #333333;
     width: 60%;
     height: 20%;
     border-radius: 30px;
     margin-top: 5%;
     text-align: center;
-    text-shadow: 1px 1px 0 #14414d, -0.5px -0.5px 0 #000;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -88,7 +87,7 @@ section {
   }
   
   .curiosity-carousel div {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
     margin-right: 20px;
     scroll-snap-align: start;
     background-color: #f9f9f9;
@@ -130,6 +129,7 @@ section {
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 40%;
 }
 
 .eventos h3 {
@@ -218,6 +218,7 @@ footer div a {
     background-color: #eef0f1;
   }
   .galeria{
+    display: flex;
     clear: both;
     flex-direction: row;
   }
