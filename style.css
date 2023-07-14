@@ -3,9 +3,7 @@
   margin: 0%;
 }
 
-header, footer {
-  clear: both;
-}
+ 
 
 .imagen {
   background-image: url("FondoLouvre.jpg");
@@ -23,12 +21,7 @@ header, footer {
   filter: brightness(80%);
 }
 
-.Navegador {
-  background-color: #231a70c5;
-  padding: 10px;
-  margin-top: 0px;
-  text-align: center;
-}
+
 
 .textoIndex {
   background-color: #7c6bf8;
@@ -46,10 +39,17 @@ header, footer {
   font-size: 130%;
   padding: 2%;
   box-shadow: 0 6px 12px rgb(39, 2, 73);
+  margin: 40px;
 }
 
 .textoIndex p {
   font-size: large;
+}
+.Navegador {
+  background-color: #231a70c5;
+  padding: 10px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .Navegador img {
@@ -75,14 +75,6 @@ body {
   height: 100%;
 }
 
-.Navegador li a {
-  text-decoration: none;
-  color: #fdffff;
-  border-radius: 5px;
-  font-size: 20px;
-  transition-duration: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 section {
   display: flex;
@@ -206,9 +198,6 @@ footer div img {
   width: 10%;
 }
 
-header {
-  clear: both;
-}
 
 footer div a {
   color: #fff;
@@ -258,6 +247,7 @@ footer div a {
   display: flex;
   clear: both;
   flex-direction: row;
+  margin-left: 19px;
 }
 
 .galeria div {
@@ -274,4 +264,47 @@ footer div a {
 .galeria div img {
   width: 100%;
   height: auto;
+}
+
+.Navegador img {
+  width: 7%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.Navegador li {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.Navegador li :hover{
+  background-color: #ffffff38;
+  transform: scale(1.2, 1.2, 1.2);
+}
+
+.Navegador li a {
+  text-decoration: none;
+  color: #fdffff;
+  border-radius: 5px;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Navegador {
+  padding: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.img-contact img {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.googleMaps {
+  margin-top: 20px;
 }
