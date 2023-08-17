@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exhibiciones</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
 </head>
 
-<body>
+<body style="background-color: #858585;">
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
+                </div>
+            </a>
 
             <ul class="nav-links">
+
                 <li><a href="index.html"><b>Home</b></a></li>
                 <li><a href="contacto.html"><b>Contacto</b></a></li>
                 <li style="border-bottom: 2px solid #000000;"><a href="exhibiciones.html"><b>Exhibiciones</b></a></li>
@@ -28,7 +32,7 @@
     </header>
     <section class="imagen"></section>
     <div class="ContenedorExhibicion" style="background-color: #808080b6;">
-        <Div>
+        <div>
             <h3>Visitas Guiadas</h3>
             <img src="VisitaGuiada.jpg">
             <h5>
@@ -37,7 +41,12 @@
                 Gioconda, la Victoria de Samotracia, la Venus de Milo…), los espacios más emblemáticos del antiguo
                 palacio del Louvre y su historia.
 
+
             </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Visita Guiada</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </Div>
         <div>
             <h3>El pabellon del Reloj (Historia del Louvre)</h3>
@@ -47,6 +56,10 @@
                 Museo del Louvre en París, Francia. Fue construido en el siglo XVI durante el reinado del rey Francisco
                 I y era originalmente una torre de vigilancia.
             </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Pabellon del Reloj</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </div>
         <div>
             <h3>Antiguedades Griegas / La galeria Campana</h3>
@@ -58,6 +71,11 @@
                 estas culturas antiguas.
 
             </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Antiguedades Griegas / Galeria
+                    Campana</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </div>
         <div>
             <h3>Antigüedades itálicas y etruscas</h3>
@@ -68,28 +86,103 @@
                 tumbas etruscas reconstruidas, que ofrecen una visión única de la forma en que los antiguos etruscos
                 honraban y enterraban a sus muertos.
             </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Antigüedades itálicas y
+                    etruscas</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </div>
         <div>
             <h3>La guardiana del arte egipcio</h3>
             <img src="Guardiana_egipcio.jpg">
             <h5>
-                Dentro de las primeras salas de esta sección, se explican los principales aspectos de la civilización egipcia, empezando por la importancia del Nilo y de su crecida anual, la cual aseguraba la fertilidad del campo. Por su parte, la capilla de la mastaba de Ajethotep nos revela la monumentalidad de la arquitectura egipcia. Luego tenemos una sala dedicada a los jeroglíficos y, a continuación, pasamos a conocer la vida cotidiana de los egipcios, su artesanía, su mobiliario, sus adornos y sus ropajes. Por último, la sala del templo y la colección de sarcófagos recuerdan el lugar preeminente que ocupaban la religión y los ritos funerarios en la civilización egipcia.
+                Dentro de las primeras salas de esta sección, se explican los principales aspectos de la civilización
+                egipcia, empezando por la importancia del Nilo y de su crecida anual, la cual aseguraba la fertilidad
+                del campo. Por su parte, la capilla de la mastaba de Ajethotep nos revela la monumentalidad de la
+                arquitectura egipcia. Luego tenemos una sala dedicada a los jeroglíficos y, a continuación, pasamos a
+                conocer la vida cotidiana de los egipcios, su artesanía, su mobiliario, sus adornos y sus ropajes. Por
+                último, la sala del templo y la colección de sarcófagos recuerdan el lugar preeminente que ocupaban la
+                religión y los ritos funerarios en la civilización egipcia.
             </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar La guardiana del arte egipcio</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </div>
+        <div>
+            <h3>Arte Renacentista</h3>
+            <img src="ArteRenacenista.jpg">
+            <h5 style="padding: 1%;">
+                Sumérgete en el resplandor del Renacimiento, un período de renacimiento cultural y creativo que transformó la
+        historia del arte. Admira las obras maestras de maestros renombrados como Leonardo da Vinci, Michelangelo y
+        Rafael, cuyas creaciones revolucionaron la forma en que se percibía el mundo y la expresión artística. Desde
+        la serenidad de las madonnas hasta la majestuosidad de las cúpulas renacentistas, esta exhibición te llevará
+        en un viaje a través del tiempo para explorar el arte, la ciencia y la filosofía que florecieron en este
+        apasionante período.
+            </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Arte Renacentista</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
         </div>
-        
-        <footer>
-            <div>
-                <nav class="Navegador">
-                    <a href="https://www.facebook.com/museedulouvre/"><img src="Facebook.png"></a>
-                    <a href="https://twitter.com/MuseeLouvre"><img src="Twitter.png"></a>
-                    <a href="https://www.instagram.com/museelouvre/"><img src="Instagram.png"></a>
-                    <p>&copy; 2023 Pagina oficial del Museo de Louvre. Todos los derechos reservados.
-                    </p>
-                </nav>
-            </div>
-    
-        </footer>
+        <div>
+            <h3>Culturas del Antiguo Oriente</h3>
+            <img src="AntiguoOriente.jpg">
+            <h5>
+                Sumérgete en las fascinantes civilizaciones del Antiguo Oriente. Desde la majestuosidad de los zigurats
+        mesopotámicos hasta los tesoros de la antigua Persia, esta exhibición te transportará en el tiempo para
+        descubrir los logros arquitectónicos, artísticos y culturales de estas antiguas sociedades.
+            </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Culturas del Antiguo Oriente</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
+        </div>
+
+        <div>
+            <h3>Arte Contemporáneo</h3>
+            <img src="ArteContemporaneo.jpg">
+            <h5>
+                Explora las expresiones artísticas más vanguardistas del siglo XX y XXI. Desde el cubismo hasta el arte
+                conceptual, esta exhibición te desafiará a repensar la forma en que ves el mundo y a contemplar cómo los
+                artistas contemporáneos exploran temas de identidad, sociedad y tecnología a través de sus creaciones.
+            </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Arte Contemporáneo</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
+        </div>
+        <div>
+            <h3>Tesoros del Antiguo Egipto</h3>
+            <img src="TesorosEgipto.jpg">
+            <h5>
+                Adéntrate en el misterioso mundo del antiguo Egipto. Descubre las joyas, amuletos y artefactos funerarios que
+                acompañaron a los faraones en su viaje hacia la eternidad. Explora las creencias religiosas, la vida cotidiana
+                y la rica iconografía que definió la cultura egipcia a lo largo de los milenios.
+            </h5>
+            <section style="margin-top: 2%;">
+                <button class="boton-reserva" onclick="mostrarMensaje()">Reservar Tesoros del Antiguo Egipto</button>
+                <div class="alert" id="mensajeAlert">¡Su reserva ha sido confirmada!</div>
+            </section>
+        </div>
+    </div>
+    <script>
+        function mostrarMensaje() {
+            alert("¡Su reserva ha sido confirmada!");
+        }
+    </script>
+    <footer>
+        <div>
+            <nav class="Navegador">
+                <a href="https://www.facebook.com/museedulouvre/"><img src="Facebook.png"></a>
+                <a href="https://twitter.com/MuseeLouvre"><img src="Twitter.png"></a>
+                <a href="https://www.instagram.com/museelouvre/"><img src="Instagram.png"></a>
+                <p>&copy; 2023 Pagina oficial del Museo de Louvre. Todos los derechos reservados.
+                </p>
+            </nav>
+        </div>
+
+    </footer>
 </body>
 
 </html>

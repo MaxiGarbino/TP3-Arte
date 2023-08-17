@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
 </head>
 
-<body>
+<body style="background-color: #858585;">
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/1280px-Louvre_Museum_icon_1.svg.png">
+                </div>
+            </a>
 
             <ul class="nav-links">
+
                 <li><a href="index.html"><b>Home</b></a></li>
                 <li><a href="contacto.html"><b>Contacto</b></a></li>
                 <li><a href="exhibiciones.html"><b>Exhibiciones</b></a></li>
@@ -27,36 +31,71 @@
         </nav>
     </header>
     <section class="imagen"></section>
-    <div class="ContenedorExhibicion"  style="background-color: #808080b6;">
-        <div>
-            <h3>Nápoles en París</h3>
-            <img src="NapolesEnParis.jpg">
-            <h5>El Louvre invita al museo de Capodimonte
-                07/06/2023-08/01/2024
-
-                Lugar de la Exposición:
-                Ala Denon: salón Cuadrado y Gran Galería
-                Ala Sully: sala de la Capilla
-
-                EN ESPECIAL COLABORACIÓN CON EL MUSEO DE CAPODIMONTE
-                En 2023, el Louvre llevará a cabo una colaboración de envergadura inédita con el Museo de Capodimonte,
-                reafirmando así la importancia de la colaboración entre las instituciones museísticas europeas.
-            </h5>
+    <div class="ContenedorExhibicion" style="background-color: #808080b6;">
+        <div class="evento">
+            <div class="evento-inner">
+                <h3>Nápoles en París</h3>
+                <img src="NapolesEnParis.jpg" alt="Nápoles en París">
+                <p class="hidden">
+                    El Louvre invita al museo de Capodimonte<br>
+                    07/06/2023-08/01/2024<br><br>
+                    Lugar de la Exposición:<br>
+                    Ala Denon: salón Cuadrado y Gran Galería<br>
+                    Ala Sully: sala de la Capilla<br><br>
+                    EN ESPECIAL COLABORACIÓN CON EL MUSEO DE CAPODIMONTE<br>
+                    En 2023, el Louvre llevará a cabo una colaboración de envergadura inédita con el Museo de
+                    Capodimonte,
+                    reafirmando así la importancia de la colaboración entre las instituciones museísticas europeas.
+                </p>
+            </div>
         </div>
 
-        <div>
-            <h3>Exposición "Leonardo da Vinci"</h3>
-            <img src="Davinci.jpg">
-            <h5>Esta sección de la exposición presenta muchos de los inventos y diseños de Leonardo da Vinci
-                relacionados
-                con el espacio, incluyendo sus estudios sobre la propulsión de cohetes, sus diseños de máquinas
-                voladoras y
-                sus dibujos de una Luna con cráteres y montañas. También hay una réplica de tamaño completo del
-                helicóptero
-                aéreo de Leonardo, que se cree que fue uno de los primeros diseños de un helicóptero en la historia.
-            </h5>
+        <div class="evento">
+            <div class="evento-inner">
+                <h3>Exposición "Leonardo da Vinci"</h3>
+                <img src="Davinci.jpg" alt="Exposición Leonardo da Vinci">
+                <p class="hidden">
+                    El Louvre presenta "Leonardo da Vinci: Visiones Espaciales"<br>
+                    Fecha: 15/09/2023 - 15/12/2023<br><br>
+                    Lugar de la Exposición:<br>
+                    Ala Denon: Salón de las Innovaciones<br>
+                    Ala Richelieu: Sala de Inventos<br><br>
+                    Descubre la genialidad de Leonardo da Vinci en esta exposición que explora sus investigaciones
+                    sobre el espacio y la propulsión de cohetes, sus diseños de máquinas voladoras y su visión de la
+                    Luna.
+                    La muestra incluye una réplica de tamaño completo de su helicóptero aéreo, uno de los primeros
+                    diseños
+                    de helicóptero en la historia.
+                </p>
+            </div>
         </div>
     </div>
+    <div style="text-align: center;">
+        <div class="contador">
+            <h3>Próximo Evento</h3>
+            <div id="countdown"></div>
+        </div>
+    </div>
+    <script>
+        var countDownDate = new Date("2023-09-15").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRADO";
+            }
+        }, 1000);
+    </script>
     <footer>
         <div>
             <nav class="Navegador">
@@ -69,7 +108,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>
